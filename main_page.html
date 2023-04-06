@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>
+        pink
+    </title>
+    <h1 style="color: palevioletred;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 10px;">SHOPPINK</h1>
+    <style>
+      .navbar{
+        margin: 0;
+        padding: 0;
+        background-color: palevioletred;
+        height: 60px;
+      }
+      .menu{
+          float:left;
+      }
+      
+      .menu ul li{
+        display:inline-block;
+
+      }
+      .menu ul li a{
+        
+        padding: 19px;
+        line-height: 29px;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(54, 4, 54);
+      }
+      .menu ul li a:hover{
+        background-color: plum;
+      }
+      .active {
+        background-color: pink;
+      }
+      .search{
+        display: flex;
+        padding: 10px;
+        margin-top: 4px;
+        margin-left: 25px;
+        float: right;
+       
+      }
+
+      .search input[type=text] {
+        font-size: 12px;
+        padding: 8px;
+        width: 300px;
+        border-radius: 7px;
+        border-color: pink;
+      }
+
+      .search .shop{
+        margin-right: 11px;
+        mix-blend-mode: multiply;
+        border: none;
+      }
+
+      .search .shop:hover{
+        background-color: plum;
+      }
+
+      .makeup{
+        padding:50px;
+     }
+     .btnshop{
+        margin-top: 100px;
+        background-color: rgb(167, 87, 114);
+        padding: 10px;
+        width: 114px;
+        align-items: center;
+}
+
+     
+
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <div class="navbar">
+        <div class="menu">
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactus.html">Help</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+            </ul>
+                        
+        </div>
+        
+        <div class="search">
+            <button class="shop">
+                <img src="https://w7.pngwing.com/pngs/819/275/png-transparent-shopping-bags-trolleys-shopping-cart-handbag-bag-purple-blue-violet.png" width="30px" >
+            </button>
+                <input type="text" name="search" placeholder="Search...">
+                <button class="shop">
+                 <img  src="data:image/png;base64,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" width="30px">
+                </button>
+        </div>
+        <div>
+            <button class="btnshop">
+                Shop Now
+                
+            </button>
+            <img class="makeup" src="E:\VS Code\B46\Web Project\img\makeup.jpeg" >
+        </div>
+    </div>
+</body>
+
+</html>
